@@ -108,6 +108,7 @@ const { heading, subheading } = Astro.props;
   </div>
 
   <div class="loader items-center justify-center hidden bg-white">
+    <span class="loader"></span>
     <img src="/src/icons/loader.webp" alt="Loading Tiktok Video to Download" />
   </div>
 
@@ -176,18 +177,18 @@ const { heading, subheading } = Astro.props;
     function init() {
       pasteBtn = document.querySelector("#paste-btn");
 
-      // DOM elements ko dobara select karna
+      // DOM elements repeat selection
       submitForm = document.querySelector(".sub-form");
       mainDiv = document.querySelector(".main-div");
       downDiv = document.querySelector(".down-div");
       message = document.querySelector(".msg");
       loader = document.querySelector(".loader");
 
-      // Submit event listener lagana
+      // Add Submit event listener
       submitForm.addEventListener("submit", dt);
       pasteBtn.addEventListener("click", pasteClipBoarValue);
 
-      // Initial data fetch karna
+      // Fetch Initial data
       SFR();
     }
 
