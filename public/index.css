@@ -243,4 +243,50 @@ img {
 
 
 
+.how-to-download {
+    margin: 70px auto;
+    max-width: 1280px;
+}
+.how-to-download__heading {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 0 0 40px;
+    text-align: center;
+}
+.instruction {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.instruction__element {
+    align-items: center;
+    background: var(--white-color);
+    border-radius: 10px;
+    display: grid
+;
+    gap: 40px;
+    grid-template-columns: 1fr max-content;
+    padding: 20px 30px;
+}
 
+.howto__title {
+    color: var(--text-main);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 0 auto;
+}
+.instruction__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 10px 0 0;
+    max-width: 94%;
+}
+.instruction__img {
+    justify-self: flex-end;
+}
